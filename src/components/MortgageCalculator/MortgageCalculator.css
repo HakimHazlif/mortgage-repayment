@@ -1,0 +1,12 @@
+.mortgage-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+@media (max-width: 768px){
+  .mortgage-main{
+    flex-direction: column;
+  }
+}

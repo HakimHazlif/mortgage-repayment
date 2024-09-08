@@ -1,0 +1,214 @@
+:root {
+  --color-light: rgb(99, 124, 145);
+  --color-dark: rgb(18, 71, 114);
+  --background: rgb(10, 45, 73);
+}
+
+.left-section{
+  width: 36vw;
+  background-color: white;
+  padding: 6vw 4vw;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.top-leftest{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7vh;
+}
+.top-leftest h2{
+  color: var(--color-dark);
+  font-size: 26px;
+}
+.top-leftest u{
+  color: var(--color-light);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.left-section h3{
+  color: var(--color-light);
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+
+.amount-field label,
+.seconds-input-fields label{
+  display: flex;
+  background-color: rgb(186, 234, 250);
+  align-items: center;
+  border: 1px solid rgb(18, 71, 114);
+  border-radius: 5px;
+}
+
+.amount-field label input,
+.seconds-input-fields label input{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.amount-field label input{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.seconds-input-fields label input{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.amount-field label p,
+.seconds-input-fields label p{
+  padding: 0 0.7rem;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(6, 76, 134);
+}
+
+.amount-field .label-focus,
+.seconds-input-fields .label-focus{
+  border-color: rgb(211, 214, 24);
+  background-color: rgb(207, 223, 62);
+}
+.amount-field .red-label-focus,
+.seconds-input-fields .red-label-focus{
+  border-color: rgb(221, 36, 36);
+  background-color: rgb(252, 101, 101);
+  color: white;
+}
+
+.seconds-input-fields{
+  display: flex;
+  gap: 3vh;
+}
+
+
+.thirds-input-fields .thirds-inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.thirds-input-fields label{
+  display: flex;
+  gap: 20px;
+  border: 1px solid rgb(22, 91, 148);
+  border-radius: 4px;
+  padding: 14px 15px;
+}
+.thirds-input-fields p{
+  font-size: 16px;
+}
+
+.thirds-input-fields .label-focus{
+  border-color: rgb(211, 214, 24);
+  background-color: rgb(248, 250, 217);
+}
+.thirds-input-fields label input[type="radio"]{
+  accent-color: rgb(211, 214, 24);
+  cursor: pointer;
+}
+.thirds-input-fields label input[type="radio"]:checked{
+  border: none;
+  outline: none;
+}
+
+
+.calculate-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 60px;
+  background: rgb(207, 223, 62);
+  border: none;
+  border-radius: 30px;
+  margin-top: 5vh;
+  cursor: pointer;  
+}
+.calculate-button p{
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(12, 51, 83);
+} 
+.calculate-button img{
+  width: 24px;
+  color: rgb(12, 51, 83);
+}
+
+.requered{
+  display: inline;
+  font-size: 14px;
+  margin-top: 0.5rem;
+  color: rgb(221, 36, 36);
+}
+
+
+@media (max-width: 1280px) {
+  .left-section{
+    width: 44vw;
+  }
+}
+@media (max-width: 1024px) {
+  .left-section{
+    width: 46vw;
+  }
+  .calculate-button {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .left-section{
+    width: 75vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+  }
+  .calculate-button{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .left-section{
+    width: 90vw;
+  }
+}
+@media (max-width: 414px){
+  .top-leftest h2{
+    font-size: 22px;
+  }
+  .seconds-input-fields{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .calculate-button {
+    padding: 18px 36px;
+  }
+}
+@media (max-width: 375px){
+  .top-leftest h2{
+    font-size: 20px;
+  }
+  .top-leftest u{
+    font-size: 13px;
+  }
+}

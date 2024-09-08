@@ -1,0 +1,94 @@
+.results{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 6vw 4vw;
+  gap: 3vh;
+  margin-bottom: 9vh;
+}
+
+.info{
+  margin-bottom: 20px;
+}
+.info h3{
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+.info p{
+  font-size: 16px;
+  line-height: 26px;
+  color: rgb(174, 209, 238);
+}
+
+.results-box {
+  width: 100%;
+  height: 85%;
+  background-color: rgb(207, 223, 62);
+  padding: 14px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  border-radius: 1vw;
+  position: relative;
+  z-index: 1;
+}
+.results-box::after{
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgb(7, 30, 49);
+  border-radius: 0.7vw;
+  top: 0.2vw;
+  right: 0vw;
+}
+
+
+.monthly-result p,
+.total-repay p{
+  font-size: 15px;
+  color: rgb(174, 209, 238);
+  margin-bottom: 8px;
+}
+.monthly-result .result-value{
+  font-size: 60px;
+  font-weight: 700;
+  width: 100px;
+  font-family: "Plus Jakarta Sans";
+  color: rgb(207, 223, 62);
+}
+
+.line{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.line hr{
+  width: 100%;
+  height: 1.2px;
+  border: none;
+  background-color: rgb(66, 105, 138);
+}
+
+.repay-value{
+  font-size: 32px;
+  font-weight: 600;
+}
+
+
+@media (max-width: 414px){
+  .info p{
+    font-size: 14px;
+  }
+  .monthly-result .result-value{
+    font-size: 52px;
+  }
+  .repay-value{
+    font-size: 30px;
+  }
+  .results-box::after{
+    top: 0.6vw;
+  }
+}

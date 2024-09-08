@@ -1,0 +1,36 @@
+.initual-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8vw;
+  gap: 16px;
+}
+.sentences{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+.sentences-title{
+  font-size: 28px;
+}
+.sentences p{
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgb(174, 209, 238);
+}
+
+
+
+@media (max-width:375px) {
+
+  .sentences-title{
+    font-size: 22px;
+  }
+  .sentences p{
+    font-size: 16px;
+  }
+}
